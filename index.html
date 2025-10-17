@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ec5177">
+    <meta name="description" content="Tienda de Lucianita: productos únicos, detalles especiales y regalos con encanto. Descubre lo que tenemos para ti.">  
+    <meta property="og:title" content="Tienda de Lucianita – Regalos y detalles con encanto">
+    <meta property="og:description" content="Explora Tienda de Lucianita: artículos únicos, hechos con cariño. Encuentra el regalo perfecto o algo especial para ti.">
+    <meta property="og:image" content="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68ee6aee68079c895d0f4ce5_%C3%ADcono%20de%20cartera%20con.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tienda de Lucianita – Regalos y detalles con encanto">
+    <meta name="twitter:description" content="Explora Tienda de Lucianita: artículos únicos, hechos con cariño. Encuentra el regalo perfecto o algo especial para ti.">
+    <meta name="twitter:image" content="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68ee6aee68079c895d0f4ce5_%C3%ADcono%20de%20cartera%20con.png">
+    <title>Tienda de Lucianita</title>
+    <link rel="icon" type="image/svg+xml" href="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68f1718ebfa459ead51a356f_68ee6aee68079c895d0f4ce5_%C3%ADcono%20de%20cartera%20con.png">
+    <link rel="preload" href="css/css.css" as="style">
+    <link rel="preload" href="js/app.js" as="script">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/afacad" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <nav class="container navigation">
+            <div class="title">
+                <a href="index.html">
+                    <h1>
+                        <i class="fa-solid fa-bag-shopping icon icon-color"></i>
+                        Tienda de Lucianita
+                    </h1>
+                </a>
+            </div>
+            <div class="navigation2">
+                <div class="nav">
+                    <label for="my-menu" id="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="my-menu" hidden>
+                    <ul class="ul-li">
+                        <li class="enlace"><a href="#inicio">Inicio</a></li>
+                        <li class="enlace"><a href="#productos">Productos</a></li>
+                        <li class="enlace"><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <input type="checkbox" id="slide-carrito" hidden>
+                <div class="show-cantidad">
+                    <label for="slide-carrito" class="btn-carrito">
+                        <i class="fa-solid fa-bag-shopping icon2"></i>
+                        <span class="texto">Carrito</span>
+                    </label>
+                    <p id="counter"></p>
+                </div>
+                <div class="carrito">
+                    <div class="navigation">
+                        <p class="title-carrito"><i class="fa-solid fa-bag-shopping icon-carrito"></i> Carrito de Compras</p>
+                        <label for="slide-carrito" class="close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                    <p class="statu-carrito">Tu carrito está vacío</p>
+                    <div class="carrito-content">
+                    </div>
+                    <ul id="myCarrito">
+                    </ul>
+                    <div class="total">
+                    </div>  
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio" id="inicio">
+            <article class="inicio-content">
+                <div>
+                    <h2 class="sub-title">Descubre lo Novedoso en</h2>
+                    <h2 class="sub-title sub-color">Tienda de Lucianita</h2>
+                </div>
+                <div class="text-content">
+                    <p class="text">Este es una página de mi emprendimiento para la venta de productos innovadores de uso general. Espero que me puedas apoyar con tus compras online .</p>
+                </div>
+                <div class="btn-content">
+                    <button class="btn-catalogo" onclick="location.href='#productos'">
+                        Ver Catálogo
+                        <i class="fa-solid fa-arrow-right btn-icon"></i>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <section class="productos" id="productos">
+            <article class="container producto-content">
+                <h2 class="title-producto">Nuestros Productos</h2>
+                <div class="text-content2">
+                    <p class="text-producto">Explora nuestra selección de productos innovadores, cada uno con su código único de identificación.</p>
+                </div>
+
+                <div class="productos-columns">
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e975994b097509152db205_RIZADOR2.webp' alt='Conjunto de Rizadores' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Conjunto de Rizadores</h2>
+                                    <p class='item-precio'>S/ 10.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C001</span></p>
+                            </div>
+                            <p class='item-text'>Conjunto de rizadores de pestañas elegantes, adecuado para todos los tipos de ojos, crea un maquillaje de ojos grandes y atractivos con un agarre rápido.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e975992bf3bec402240b36_MASCARILLA_CABELLO.webp' alt='Kit Capilar Queratina & Colágeno' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Kit Capilar Queratina & Colágeno</h2>
+                                    <p class='item-precio'>S/ 10.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C002</span></p>
+                            </div>
+                            <p class='item-text'>Juego de Mascarilla Capilar con Queratina y Aceite para el Cabello Colágeno - Combo Hidratante Cuidado del Pelo Normal, Ideal Para Diversos Tipos De Cabellera Media a Larga Después Del Tinte Y La Rizado. Controla El Frizz Con Champú Condicionador Keratinizante Profesional En Formato Postcoloración.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e97599c45c4d79d1aea8cb_7af3eeeb-2351-4930-b.webp' alt='Pendientes de Estrella con Perlas' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Pendientes de Estrella con Perlas</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C004</span></p>
+                            </div>
+                            <p class='item-text'>Pendientes de Estrella con Perlas Falsas Brillantes y Pedrería para Mujer.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e97599c558a680cb8b3fb2_509fc1a1-ccfe-4a3c-9.webp' alt='Pack de 2 Pendientes Y2K Estrella Abierta' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Pack de 2 Pendientes Y2K Estrella Abierta</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C005</span></p>
+                            </div>
+                            <p class='item-text'>Pack de 2 Pendientes Y2K Estrella Abierta, sin Perforación.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e975995832d2c75ad5afd7_d3d3b10e-f435-4cc2-8.webp' alt='Pendientes Estrellados' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Pendientes Estrellados</h2>
+                                    <p class='item-precio'>S/ 8.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C006</span></p>
+                            </div>
+                            <p class='item-text'>Elegantes Pendientes de Anillo Estrellados para Mujer - Brillante.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e9759865f8b912c27c11d4_07ad6679-1665-4956-8.webp' alt='Pendientes de Perla' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Pendientes de Perla</h2>
+                                    <p class='item-precio'>S/ 5.20</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C007</span></p>
+                            </div>
+                            <p class='item-text'>1 Par de Pendientes de Perla Imitación Elegantes y Lindos Florales.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e97599b2d110c6d092474c_2883eca7-32d1-4feb-8.webp' alt='Escobilla para Zapatos' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Escobilla para Zapatos</h2>
+                                    <p class='item-precio'>S/ 6.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C008</span></p>
+                            </div>
+                            <p class='item-text'>Escobilla para zapatos, cepillo multifuncional líquido para calzado, cepillo de lavandería con cerdas suaves, limpiador especial sin dañar las zapatillas, ideal para uso doméstico.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e97599926ae2980a3bb7e3_e8b59521321c2e633af1.webp' alt='Rotuladores' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Rotuladores</h2>
+                                    <p class='item-precio'>S/ 14.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C009</span></p>
+                            </div>
+                            <p class='item-text'>Rotuladores de Doble Punta de Secado Rápido y Vibrantes - Tinta No Tóxica a Base de Aceite, 6 Colores (Rosa, Verde, Amarillo, Naranja, Púrpura).</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e97599502ec04977c57822_15e69fe3-2dc0-496a-b.webp' alt='Estuche de Lápices' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Estuche de Lápices</h2>
+                                    <p class='item-precio'>S/ 15.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C010</span></p>
+                            </div>
+                            <p class='item-text'>Estuche de lápices creativo de alta capacidad con bolsa multifuncional para escritorio, ideal para trabajo portátil o regalo (ROSA).</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e97599e9795ee7ed3003d8_2cc5a167-36fb-4b69-8.webp' alt='Reloj con Accesorios' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Reloj con Accesorios</h2>
+                                    <p class='item-precio'>S/ 15.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C011</span></p>
+                            </div>
+                            <p class='item-text'>Juego de 6 relojes de moda para mujer - Reloj digital blanco con pulsera floral, collar, pendientes y anillos.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68e97599332be8f6acad0e9c_f1c6b2a7-6025-49ab-9.webp' alt='Almohadillas' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Almohadillas</h2>
+                                    <p class='item-precio'>S/ 9.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C012</span></p>
+                            </div>
+                            <p class='item-text'>30 almohadillas autoadhesivas invisibles para sudor y mal olor, desechables, sin residuos, para axilas y pies, ideal para gimnasio, viajes y uso diario, hombres y mujeres, almohadillas para sudor, esenciales para el gimnasio, ajuste perfecto, capa absorbente, control de olores, para amantes del fitness.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f3c7d9fcef757220d9_1727358005290-458b33.webp' alt='Anillo de Voleibol' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Anillo de Voleibol</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C013</span></p>
+                            </div>
+                            <p class='item-text'>1 pieza de anillo de voleibol con diseño de corazón.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f317fe92a0d58c0bc4_ef0359e4-4401-4978-9.webp' alt='Anillo de mariposa' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Anillo de mariposa</h2>
+                                    <p class='item-precio'>S/ 3.50</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C014</span></p>
+                            </div>
+                            <p class='item-text'>Anillo de mariposa, elegante y versátil, ideal para bodas, fiestas.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f392f800e286c4a809_d21bdf3b-a1ac-454a-b.webp' alt='Anillo Floral' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Anillo Floral</h2>
+                                    <p class='item-precio'>S/ 4.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C015</span></p>
+                            </div>
+                            <p class='item-text'>Anillo Elegante Floral para Mujer - Banda Ajustable con Detalle Dorado Amarillento.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f3fb39cc6e945a05d3_09625f16-97ce-4e04-b.webp' alt='Brochas de Limpieza' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Brochas de Limpieza</h2>
+                                    <p class='item-precio'>S/ 10.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C016</span></p>
+                            </div>
+                            <p class='item-text'>1pc Set de 7 en 1 de brochas de limpieza multiusos | Removedor de suciedad + Limpieza de teclado + Limpieza de pantalla de computadora portátil + Limpieza de audífonos | Kit inalámbrico de limpieza multiusos para AirPods Pro, teclados, computadoras portátiles, teléfonos y monitores, esenciales de limpieza digital.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f36f42ec205bf0e9ea_1466b567caf6aedf50e4.webp' alt='Clips para Orejas' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Clips para Orejas</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C017</span></p>
+                            </div>
+                            <p class='item-text'>Juego de 3 clips para orejas con strass, elegantes y versátiles</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f372b5df367aeaa720_1725193113361-39cc10.webp' alt='Clips para Orejas' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Clips para Orejas</h2>
+                                    <p class='item-precio'>S/ 4.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C018</span></p>
+                            </div>
+                            <p class='item-text'>Conjunto de 5 piezas de Clips para Oreja en Forma de C con Hoja Pequeña y Hueca, Simples y a la Moda sin Necesidad de Perforación.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f3efc752198b856db7_8525cb25-7df7-4ef4-a.webp' alt='Gancho de Estrella' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Gancho de Estrella</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C019</span></p>
+                            </div>
+                            <p class='item-text'>1 pieza de aleación en forma de estrella, estilo dulce minimalista, accesorio para el cabello para mujeres y niñas, declaración de moda Y2K, accesorio versátil para cola de caballo mediana para mujeres.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f3bc296f2a3a90377c_1e2d2b99-2578-4645-9.webp' alt='Anillos de Estrellas' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Anillos de Estrellas</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C020</span></p>
+                            </div>
+                            <p class='item-text'>Juego de 4 anillos de moda, anillos apilables de metal oscuro retro con estrellas, ideales para festivales de música y fiestas, para hombres y mujeres.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed1f34fa303ab8a5dfa32_84a8a598fd2d4c058f1f.webp' alt='Collar de Araña' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Collar de Araña</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C021</span></p>
+                            </div>
+                            <p class='item-text'>Collar con Colgante de Araña Tierna.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63cd1a3cd14a18dc2fc_97ee4ac9d3794175b6e6.webp' alt='Llavero de Guitarra' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Llavero de Guitarra</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C022</span></p>
+                            </div>
+                            <p class='item-text'>1 pieza de llavero de guitarra punk rock con corazones y estrellas.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63c70c6aaba1b54bca2_01c0c6174acaeb102097.webp' alt='Rímel' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Rímel</h2>
+                                    <p class='item-precio'>S/ 15.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C023</span></p>
+                            </div>
+                            <p class='item-text'>Rímel denso y alargador con efecto curling natural, maquillaje duradero resistente a manchas, a prueba de agua y sudor, con fórmula de escualano vegetal</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63cacc32658d354e723_e5724c9b-2193-4d3f-a.webp' alt='Llavero de Auriculares' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Llavero de Auriculares</h2>
+                                    <p class='item-precio'>S/ 7.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C024</span></p>
+                            </div>
+                            <p class='item-text'>1 pieza de llavero de auriculares mini con tema de música Y2K con encanto de guitarra y micrófono, notas musicales y estrellas.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63cb1af1e655913ece3_e3542ee5757d442ebfb9.webp' alt='Clips de Estrella' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Clips de Estrella</h2>
+                                    <p class='item-precio'>S/ 7.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C025</span></p>
+                            </div>
+                            <p class='item-text'>40 Piezas de Horquillas Metálicas Estrella Y2K - Colores Pastel y Brillantes (Rosa, Azul, Amarillo, Verde, Morado, Naranja, Rojo) - Clips de Cinco Puntas para Mujeres.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63bc86b04386b12e794_66c64d1a1eecbf8a486c.webp' alt='Cepillo de Limpieza' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Cepillo de Limpieza</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C026</span></p>
+                            </div>
+                            <p class='item-text'>Cepillo de limpieza para botellas de silicón con mango largo - Uso en múltiples espacios: sala, dormitorio, baño, cocina - Manual, sin necesidad de electricidad - Cerdas flexibles para limpieza sin rincones inaccesibles.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63c8b183f6bfe4b5a26_1694680233487-fca10a.webp' alt='Protector de Dedo' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Protector de Dedo</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C027</span></p>
+                            </div>
+                            <p class='item-text'>1 Protector de Dedo de Acero Inoxidable Resistente - Guarda de Filo Afilado para Seguridad de Cuchillos, Agarre Antideslizante - Uso Profesional y Doméstico en Cocina</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63c728e3dfee6cb85e0_b122f2bf-c8a1-41c7-b.webp' alt='Separador de Huevo' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Separador de Huevo</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C028</span></p>
+                            </div>
+                            <p class='item-text'>1 Separador de Huevos de Paja de Trigo Sostenible - Filtro Fácil de Yema y Blanco para Repostería, Utensilio de Cocina</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63ccd1c2bb620918937_092796c8-c47e-4fca-9.webp' alt='Luz con Sensor de Movimiento' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Luz con Sensor de Movimiento</h2>
+                                    <p class='item-precio'>S/ 10.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C029</span></p>
+                            </div>
+                            <p class='item-text'>Luz nocturna LED con sensor de movimiento, encendido/apagado automático - Recargable por USB para baño, pasillo, escaleras - LED de bajo consumo, para dormitorio, clóset, decoración de fiestas.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63c6f432bb4be87d3a9_2ed7378d-78f4-4fee-b.webp' alt='Frasco de Perfume' class='item-img'> 
+                            <span class='stock'>Agotado</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Frasco de Perfume</h2>
+                                    <p class='item-precio'>S/ 5.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C030</span></p>
+                            </div>
+                            <p class='item-text'>1 frasco de perfume rellenable de 5 ml con diseño floral.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63cd7c03e6dbfc269bc_ff0e307c-e1a2-46e9-b.webp' alt='Palillo de Hilo Dental' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Palillo de Hilo Dental</h2>
+                                    <p class='item-precio'>S/ 8.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C031</span></p>
+                            </div>
+                            <p class='item-text'>Palillo de Hilo Dental Suave - Limpia los espacios entre dientes con un solo palito. Resuelve el problema del residuo alimentario que obstruye las dentaduras.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='my-img'>
+                            <img src='https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68eed63ce42279647258b841_87c57c11-b3c6-4142-a.webp' alt='Reloj de Arena' class='item-img'> 
+                            <span class='stock'>En Stock</span>
+                        </div>
+                        <div class='item-info'>
+                            <div class='item-text-content'>
+                                <div class='item-header'>
+                                    <h2 class='item-name'>Reloj de Arena</h2>
+                                    <p class='item-precio'>S/ 6.00</p>
+                                </div>
+                                <p class='item-codigo'>Código: <span id='code'>C032</span></p>
+                            </div>
+                            <p class='item-text'>Reloj de arena de color negro, temporizador de cuenta regresiva de 30s.</p>
+                            <div class='item-btn-content'>
+                                <button class='agregar'>
+                                    <i class='fa-solid fa-cart-shopping item-icon'></i>
+                                    Agregar
+                                </button>
+                                <button class='ver'>
+                                    <i class='fa-solid fa-eye item-icon'></i>
+                                    <p>
+                                        Ver
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </article>
+        </section>
+
+        <input type="checkbox" id="close-producto" hidden>
+
+        <section class="show-producto">
+            <article class="my-producto">
+            </article>
+        </section>
+
+        <ul class="message">
+        </ul>
+    </main>
+    
+    <footer class="footer" id="contacto">
+        <div class="container footer-content">
+            <div class="foot">
+                <div class="foot-enla">
+                    <a href="index.html">
+                        <h2>
+                            <i class="fa-solid fa-bag-shopping icon icon-color"></i>
+                            Tienda de Lucianita
+                        </h2>
+                    </a>
+                    <p class="texto-enla">Tu destino para productos innovadores y únicos. Calidad garantizada.</p>
+                </div>
+                <div class="foot-enla">
+                    <h2>Enlaces Rápidos</h2>
+                    <a href="#inicio" class="texto-enla">Inicio</a>
+                    <a href="#productos" class="texto-enla">Productos</a>
+                </div>
+                <div class="foot-enla">
+                    <h2>Contacto</h2>
+                    <a href="https://wa.me/51942428381?text=¡Hola%20quiero%20más%20información!" class="telefono">
+                        <i class="fa-solid fa-phone icon-tele"></i>
+                        +51 942 428 381
+                    </a>
+                </div>
+            </div>
+            <div class="text-content3">
+                <p class="text-footer">© 2025 Tienda de Lucianita. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "L"
+        }
+    </script>
+</body>
+</html>
